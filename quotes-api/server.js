@@ -3,10 +3,7 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5000; // ✅ use Render's assigned port
 
-app.use(cors({
-  origin: ["https://quotes-app-plum.vercel.app/"], // replace with Vercel URL
-  methods: ["GET"]
-}));
+app.use(cors());
 
 const quotes = {
   motivational: [
