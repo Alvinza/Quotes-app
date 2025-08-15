@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.quotes-app h1{
+    font-family: "Open Sans", sans-serif;
+};
+.quotes-app nav{
+    
+}
+
+.textFont {
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
