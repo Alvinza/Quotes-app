@@ -10,7 +10,7 @@ function QuoteViewer() {
 
   const fetchQuote = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/quotes/${category}`);
+      const res = await fetch(`https://quotes-app-hjzy.onrender.com/api/quotes/${category}`);
       const data = await res.json();
 
       if (Array.isArray(data)) {
