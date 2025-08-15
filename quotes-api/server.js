@@ -1,9 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000; // ✅ use Render's assigned port
 
-app.use(cors());
+app.use(cors({
+  origin: ["https://quotes-app-plum.vercel.app/"], // replace with Vercel URL
+  methods: ["GET"]
+}));
 
 const quotes = {
   motivational: [
@@ -116,5 +119,5 @@ app.get('/api/quotes/:category/:id', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on ${PORT}`);
 });
