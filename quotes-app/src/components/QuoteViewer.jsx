@@ -27,7 +27,7 @@ function QuoteViewer() {
       setError("Could not fetch quotes. Please try again.");
       setQuote(null);
     }
-    finally(){
+    finally{
       setLoading(false);
     }
   };
