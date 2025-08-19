@@ -55,7 +55,7 @@ Make sure you have the following installed:
 
 1. Clone the repository and navigate to backend:
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/Alvinza/Quotes-app.git
    cd quotes-app/quotes-api
    ```
 
@@ -155,4 +155,5 @@ For questions, suggestions, or collaboration opportunities:
 ---
 
 **Find inspiration in every quote! 💭✨**
+
 
