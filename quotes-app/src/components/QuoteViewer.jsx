@@ -67,14 +67,20 @@ function QuoteViewer() {
       </h2>
 
       {error && <p className="text-red-600 text-center">{error}</p>}
-      {loading && <p className="text-gray-600 text-center">Loading...please wait</p>}
-
-      {quote && (
-        <div className="text-center mb-4 ">
-          <p className="text-lg italic mb-2 leading-relaxed">"{quote.quote}"</p>
-          <p className="text-sm text-gray-600 textFont">– {quote.author}</p>
-        </div>
+      
+     <div className="text-center mb-4">
+      {loading ? (
+        <p className="text-gray-600">Loading...please wait</p>
+      ) : (
+        quote && (
+          <>
+            <p className="text-lg italic mb-2 leading-relaxed">"{quote.quote}"</p>
+            <p className="text-sm text-gray-600 textFont">– {quote.author}</p>
+          </>
+        )
       )}
+    </div>
+
 
       <div className="flex justify-center gap-3 mt-4 flex-wrap">
         <button onClick={fetchQuote} className="btn btn-dark d-flex align-items-center gap-1">
