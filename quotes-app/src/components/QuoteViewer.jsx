@@ -7,8 +7,10 @@ function QuoteViewer() {
   const { category } = useParams();
   const [quote, setQuote] = useState(null);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const fetchQuote = async () => {
+       setLoading(true);
     try {
       const res = await fetch(`https://quotes-app-hjzy.onrender.com/api/quotes/${category}`);
       const data = await res.json();
@@ -24,6 +26,9 @@ function QuoteViewer() {
     } catch (err) {
       setError("Could not fetch quotes. Please try again.");
       setQuote(null);
+    }
+    finally(){
+      setLoading(false);
     }
   };
 
@@ -62,6 +67,7 @@ function QuoteViewer() {
       </h2>
 
       {error && <p className="text-red-600 text-center">{error}</p>}
+      {loading && <p className="text-gray-600 text-center">Loading...please wait</p>}
 
       {quote && (
         <div className="text-center mb-4 ">
