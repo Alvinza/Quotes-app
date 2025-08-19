@@ -56,7 +56,7 @@ Make sure you have the following installed:
 1. Clone the repository and navigate to backend:
    ```bash
    git clone <your-repository-url>
-   cd quotes-app/backend
+   cd quotes-app/quotes-api
    ```
 
 2. Install backend dependencies:
@@ -74,7 +74,7 @@ Make sure you have the following installed:
 
 1. Navigate to frontend directory:
    ```bash
-   cd ../frontend
+   cd ../quotes-app
    ```
 
 2. Install frontend dependencies:
@@ -132,7 +132,6 @@ Get a specific quote by category and ID.
 3. **Explore**: Switch between categories to discover different types of quotes
 4. **Enjoy**: Read and share meaningful quotes that resonate with you
 
-## 🏗️ Project Architecture
 
 ### Why Custom API?
 - **Reliability**: Built custom backend to avoid dependency on external APIs that might get removed
@@ -156,3 +155,4 @@ For questions, suggestions, or collaboration opportunities:
 ---
 
 **Find inspiration in every quote! 💭✨**
+
