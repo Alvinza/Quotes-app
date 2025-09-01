@@ -6,7 +6,7 @@ A comprehensive full-stack application built with the MERN stack, featuring a cu
 **[View Live App](https://quotes-app-plum.vercel.app/)**
 ## 📸 Screenshot
 
-![App Screenshot](./src/assets/screenshot.png)
+![App Screenshot](./quotes-app/src/assets/screenshot.png)
 
 ---
 
@@ -160,6 +160,7 @@ For questions, suggestions, or collaboration opportunities:
 ---
 
 **Find inspiration in every quote! 💭✨**
+
 
 
 
